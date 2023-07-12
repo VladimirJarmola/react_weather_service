@@ -6,3 +6,9 @@ header {
     justify-content: center;
     align-items: center;
 }
+
+@media screen and (500px <= width <= 1200px) {
+    .header {
+        flex-wrap: wrap;
+    } 
+}

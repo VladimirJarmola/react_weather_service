@@ -65,15 +65,21 @@ function WeatherForecast(props: any) {
 
     if (!forecastWeatherList) {
         return (
-            <div><p>Loading...</p></div>
+            <>
+                <div>Forecast Weather</div>
+                <div><p>Loading...</p></div>
+            </>
+            
         )
     } else {
         return (
             <>
+                <div>Forecast Weather</div>
+
                 <Tabs defaultActiveKey="profile" id="justify-tab-example" className="mb-3" justify>
 
                     <Tab eventKey="Today" title="Today">
-                        <Table striped bordered hover className={"forecast"}>
+                        <Table striped bordered hover variant="dark" className={"forecast"}>
                             <thead><tr><th>Date</th><th>Temperature</th><th>Pressure</th><th>Humidity</th><th>Weather</th></tr></thead>
                             <tbody>
                                 {forecastWeatherList.filter((elem: any) => elem.dt < getSecondsToNextDay(1))
@@ -91,7 +97,7 @@ function WeatherForecast(props: any) {
                     </Tab>
 
                     <Tab eventKey="Tomorrow" title="Tomorrow">
-                        <Table striped bordered hover className={"forecast"}>
+                        <Table striped bordered hover variant="dark" className={"forecast"}>
                             <thead><tr><th>Date</th><th>Temperature</th><th>Pressure</th><th>Humidity</th><th>Weather</th></tr></thead>
                             <tbody>
                                 {forecastWeatherList.filter((elem: any) => elem.dt > getSecondsToNextDay(1)&&elem.dt < getSecondsToNextDay(2))
@@ -109,7 +115,7 @@ function WeatherForecast(props: any) {
                     </Tab>
 
                     <Tab eventKey="After Tomorrow" title="After Tomorrow">
-                        <Table striped bordered hover className={"forecast"}>
+                        <Table striped bordered hover variant="dark" className={"forecast"}>
                             <thead><tr><th>Date</th><th>Temperature</th><th>Pressure</th><th>Humidity</th><th>Weather</th></tr></thead>
                             <tbody>
                                 {forecastWeatherList.filter((elem: any) => elem.dt > getSecondsToNextDay(2)&&elem.dt < getSecondsToNextDay(3))
@@ -127,7 +133,7 @@ function WeatherForecast(props: any) {
                     </Tab>
 
                     <Tab eventKey="After After Tomorrow" title="After After Tomorrow">
-                        <Table striped bordered hover className={"forecast"}>
+                        <Table striped bordered hover variant="dark" className={"forecast"}>
                             <thead><tr><th>Date</th><th>Temperature</th><th>Pressure</th><th>Humidity</th><th>Weather</th></tr></thead>
                             <tbody>
                                 {forecastWeatherList.filter((elem: any) => elem.dt > getSecondsToNextDay(3)&&elem.dt < getSecondsToNextDay(4))
@@ -145,7 +151,7 @@ function WeatherForecast(props: any) {
                     </Tab>
 
                     <Tab eventKey="After After After Tomorrow" title="After After After Tomorrow">
-                        <Table striped bordered hover className={"forecast"}>
+                        <Table striped bordered hover variant="dark" className={"forecast"}>
                             <thead><tr><th>Date</th><th>Temperature</th><th>Pressure</th><th>Humidity</th><th>Weather</th></tr></thead> 
                             <tbody>
                                 {forecastWeatherList.filter((elem: any) => elem.dt > getSecondsToNextDay(4)&&elem.dt < getSecondsToNextDay(5))

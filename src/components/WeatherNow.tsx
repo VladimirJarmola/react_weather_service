@@ -35,12 +35,12 @@ function WeatherNow(props: any) {
             <div>Current Weather</div>
             {currentWeather ? 
             <ListGroup>
-                <ListGroup.Item>Ваш город: { currentWeather.name }</ListGroup.Item>
-                <ListGroup.Item>Температура: { currentWeather.main.temp }</ListGroup.Item>
-                <ListGroup.Item>Ветер: { currentWeather.wind.speed }</ListGroup.Item>
-                <ListGroup.Item>Давление: { currentWeather.main.pressure }</ListGroup.Item>
-                <ListGroup.Item>Влажность: { currentWeather.main.humidity }</ListGroup.Item>
-                <ListGroup.Item>Облачность: { currentWeather.weather[0].description }</ListGroup.Item>
+                <ListGroup.Item variant="dark">Ваш город: { currentWeather.name }</ListGroup.Item>
+                <ListGroup.Item variant="dark">Температура: { currentWeather.main.temp }</ListGroup.Item>
+                <ListGroup.Item variant="dark">Ветер: { currentWeather.wind.speed }</ListGroup.Item>
+                <ListGroup.Item variant="dark">Давление: { currentWeather.main.pressure }</ListGroup.Item>
+                <ListGroup.Item variant="dark">Влажность: { currentWeather.main.humidity }</ListGroup.Item>
+                <ListGroup.Item variant="dark">Облачность: { currentWeather.weather[0].description }</ListGroup.Item>
             </ListGroup> :
             <div>Loading...</div>}
         </>

@@ -1,6 +1,8 @@
 import * as React from 'react';
 import { YMaps, Map, AnyObject } from 'react-yandex-maps';
 
+import '../styles/UserMap.css';
+
 function UserMap(props: any) {
 
     let mapData = {
@@ -9,13 +11,14 @@ function UserMap(props: any) {
       };
 
     return (
+        
         <YMaps>         
-            <div>
-                My awesome application with maps!                    
-                <Map defaultState={ mapData } 
+            <div >                   
+                <Map defaultState={ mapData } className={'map'}
                 />
             </div>           
         </YMaps>
+        
 
     )
 };

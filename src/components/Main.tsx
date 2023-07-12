@@ -66,7 +66,17 @@ function Main() {
     return (
         <>
             <main>
-                <div><p> Ваши координаты {initlatitude} {initlongitude} </p></div>
+                <div><p>Your coordinates: {initlatitude} {initlongitude} </p></div>
+
+                <DropdownButton id="dropdown-basic-button" title="Choose city" >
+                    {cityList.map(city => 
+                        <Dropdown.Item href={ "#/action-" + city.index } key={city.index} 
+                        onClick={(e) => handleClick(e)}>            
+                            { city.name }
+                        </Dropdown.Item>
+                    )}
+                </DropdownButton>
+
                 {!userChange ?     
                     <WeatherNow 
                         lat = {initlatitude}
@@ -89,24 +99,14 @@ function Main() {
                     />
                 }
 
-                <DropdownButton id="dropdown-basic-button" title="Выберите город" >
-                    {cityList.map(city => 
-                        <Dropdown.Item href={ "#/action-" + city.index } key={city.index} 
-                        onClick={(e) => handleClick(e)}>            
-                            { city.name }
-                        </Dropdown.Item>
-                    )}
-                </DropdownButton>
-
-                {userChange ? 
-                    <UserMap
-                    
-                    lat = {userlatitude}
-                    long = {userlongitude}
-                /> :
-                <UserMap 
+                {!userChange ? 
+                    <UserMap                    
                         lat = {initlatitude}
                         long = {initlongitude}
+                    /> :
+                    <UserMap 
+                        lat = {userlatitude}
+                        long = {userlongitude}
                     /> }        
             </main>
         </>
