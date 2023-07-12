@@ -7,9 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --mode development --open",
     "build": "webpack --mode=production",
-    "linter": "eslint \"src/**\"",
-    "prepare": "husky install",
-    "lint": "eslint --ext .js src/"
+    "lint": "eslint \"src/**\""
   },
   "author": "",
   "license": "ISC",
@@ -43,7 +41,6 @@
     "eslint": "^8.44.0",
     "eslint-plugin-react": "^7.32.2",
     "eslint-webpack-plugin": "^4.0.1",
-    "husky": "^8.0.3",
     "react-yandex-maps": "^4.6.0",
     "stylelint": "^15.10.1",
     "stylelint-config-standard": "^34.0.0",
