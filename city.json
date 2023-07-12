@@ -1,0 +1,152 @@
+[
+    {
+        "id": 524894,
+        "name": "Moscow",
+        "state": "",
+        "country": "RU",
+        "coord": {
+            "lon": 37.606667,
+            "lat": 55.761665
+        }
+    },
+    {
+        "id": 498817,
+        "name": "Saint Petersburg",
+        "state": "",
+        "country": "RU",
+        "coord": {
+            "lon": 30.264168,
+            "lat": 59.894444
+        }
+    },
+    {
+        "id": 1496747,
+        "name": "Novosibirsk",
+        "state": "",
+        "country": "RU",
+        "coord": {
+            "lon": 82.934441,
+            "lat": 55.041111
+        }
+    },
+    {
+        "id": 1486209,
+        "name": "Yekaterinburg",
+        "state": "",
+        "country": "RU",
+        "coord": {
+            "lon": 60.612499,
+            "lat": 56.857498
+        }
+    },
+    {
+        "id": 551487,
+        "name": "Kazan",
+        "state": "",
+        "country": "RU",
+        "coord": {
+            "lon": 49.122139,
+            "lat": 55.788738
+        }
+    },
+    {
+        "id": 520555,
+        "name": "Nizhniy Novgorod",
+        "state": "",
+        "country": "RU",
+        "coord": {
+            "lon": 44.002048,
+            "lat": 56.328674
+        }
+    },
+    {
+        "id": 1496153,
+        "name": "Omsk",
+        "state": "",
+        "country": "RU",
+        "coord": {
+            "lon": 73.400002,
+            "lat": 55.0
+        }
+    },
+    {
+        "id": 542420,
+        "name": "Krasnodar",
+        "state": "",
+        "country": "RU",
+        "coord": {
+            "lon": 38.976944,
+            "lat": 45.03278
+        }
+    },
+    {
+        "id": 501175,
+        "name": "Rostov-na-Donu",
+        "state": "",
+        "country": "RU",
+        "coord": {
+            "lon": 39.71389,
+            "lat": 47.236389
+        }
+    },
+    {
+        "id": 479561,
+        "name": "Ufa",
+        "state": "",
+        "country": "RU",
+        "coord": {
+            "lon": 56.037498,
+            "lat": 54.775002
+        }
+    },
+    {
+        "id": 1502026,
+        "name": "Krasnoyarsk",
+        "state": "",
+        "country": "RU",
+        "coord": {
+            "lon": 92.791672,
+            "lat": 56.00972
+        }
+    },
+    {
+        "id": 511196,
+        "name": "Perm",
+        "state": "",
+        "country": "RU",
+        "coord": {
+            "lon": 56.285519,
+            "lat": 58.01741
+        }
+    },
+    {
+        "id": 472045,
+        "name": "Voronezh",
+        "state": "",
+        "country": "RU",
+        "coord": {
+            "lon": 39.169998,
+            "lat": 51.666389
+        }
+    },
+    {
+        "id": 472757,
+        "name": "Volgograd",
+        "state": "",
+        "country": "RU",
+        "coord": {
+            "lon": 44.501839,
+            "lat": 48.719391
+        }
+    },
+    {
+        "id": 499099,
+        "name": "Samara",
+        "state": "",
+        "country": "RU",
+        "coord": {
+            "lon": 50.150002,
+            "lat": 53.200001
+        }
+    }
+]
