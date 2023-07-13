@@ -44,7 +44,8 @@ function WeatherForecast(props: any) {
                 mode: 'json',
                 units: 'metric',
                 lang: 'ru'
-            }
+            },
+            timeout: 5000,
         })
         .then(res => {
             let requiredFields = res.data.list.map(({main, weather, dt}: resContainer) => ({

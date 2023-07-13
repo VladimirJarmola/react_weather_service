@@ -19,7 +19,8 @@ function WeatherNow(props: any) {
                 mode: 'json',
                 units: 'metric',
                 lang: 'ru'
-            }
+            },
+            timeout: 5000,
         })
         .then(res => {
             setCurrentWeather(res.data);
